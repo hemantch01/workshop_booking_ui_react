@@ -18,7 +18,7 @@ function WorkshopTable({ workshops, isInstructor, onAccept, onDateChange }) {
   if (!workshops.length) return (
     <div className="text-center py-12 text-muted-foreground">
       <p className="text-lg">No workshops found</p>
-      {!isInstructor && <Button className="mt-4" asChild><Link to="/workshops/propose"><PlusCircle className="h-4 w-4" /> Propose Workshop</Link></Button>}
+      {!isInstructor && <Button className="mt-4" asChild><Link to="/workshops/propose" className="flex items-center gap-2"><PlusCircle className="h-4 w-4" /> Propose Workshop</Link></Button>}
     </div>
   );
 
@@ -115,7 +115,7 @@ export default function DashboardPage() {
             <h1 className="text-2xl font-bold">Welcome, {user?.first_name || user?.username}</h1>
             <p className="text-muted-foreground mt-1">{isInstructor ? "Instructor Dashboard" : "Coordinator Dashboard"}</p>
           </div>
-          {isCoordinator && <Button asChild><Link to="/workshops/propose"><PlusCircle className="h-4 w-4" /> Propose Workshop</Link></Button>}
+          {isCoordinator && <Button asChild><Link to="/workshops/propose" className="flex items-center gap-2"><PlusCircle className="h-4 w-4" /> Propose Workshop</Link></Button>}
         </div>
         <Tabs tabs={tabs} defaultTab="pending" />
       </div>

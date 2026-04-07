@@ -48,3 +48,7 @@ db.sqlite3
 
 #frontend
 node_modules
+
+#environments
+venv/
+backend/venv/
