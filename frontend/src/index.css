@@ -9,8 +9,8 @@
   --card-foreground: oklch(0.1448 0 0);
   --popover: oklch(1.0000 0 0);
   --popover-foreground: oklch(0.1448 0 0);
-  --primary: oklch(0.5555 0 0);
-  --primary-foreground: oklch(0.9851 0 0);
+  --primary: oklch(0.68 0.20 52);
+  --primary-foreground: oklch(1.0000 0 0);
   --secondary: oklch(0.9702 0 0);
   --secondary-foreground: oklch(0.2046 0 0);
   --muted: oklch(0.9702 0 0);
@@ -21,7 +21,7 @@
   --destructive-foreground: oklch(0.9702 0 0);
   --border: oklch(0.9219 0 0);
   --input: oklch(0.9219 0 0);
-  --ring: oklch(0.7090 0 0);
+  --ring: oklch(0.68 0.20 52);
   --chart-1: oklch(0.5555 0 0);
   --chart-2: oklch(0.5555 0 0);
   --chart-3: oklch(0.5555 0 0);
@@ -58,8 +58,8 @@
   --card-foreground: oklch(0.9851 0 0);
   --popover: oklch(0.2686 0 0);
   --popover-foreground: oklch(0.9851 0 0);
-  --primary: oklch(0.5555 0 0);
-  --primary-foreground: oklch(0.9851 0 0);
+  --primary: oklch(0.68 0.20 52);
+  --primary-foreground: oklch(1.0000 0 0);
   --secondary: oklch(0.2686 0 0);
   --secondary-foreground: oklch(0.9851 0 0);
   --muted: oklch(0.2686 0 0);
@@ -70,7 +70,7 @@
   --destructive-foreground: oklch(0.2686 0 0);
   --border: oklch(0.3407 0 0);
   --input: oklch(0.4386 0 0);
-  --ring: oklch(0.5555 0 0);
+  --ring: oklch(0.68 0.20 52);
   --chart-1: oklch(0.5555 0 0);
   --chart-2: oklch(0.5555 0 0);
   --chart-3: oklch(0.5555 0 0);
@@ -171,16 +171,12 @@ html {
   outline-offset: 2px;
 }
 
-/* Scrollbar styling */
+/* Hide scrollbar but keep scrolling */
+html {
+  scrollbar-width: none; /* Firefox */
+}
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: var(--muted);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  display: none; /* Chrome, Safari, Edge */
 }
 
 /* Animation keyframes */

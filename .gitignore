@@ -46,6 +46,9 @@ db.sqlite3
 *.png
 *.gif
 
+# Allow screenshots in docs
+!docs/screenshots/*.png
+
 #frontend
 node_modules
 

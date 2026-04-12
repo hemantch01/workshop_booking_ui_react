@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import ThemeToggle from "./ThemeToggle";
-import { Menu, X, LogOut, User, BookOpen, BarChart3, PlusCircle } from "lucide-react";
+import { Menu, X, LogOut, User, BarChart3, PlusCircle } from "lucide-react";
 
 export default function Navbar() {
   const { user, logout, isInstructor, isCoordinator } = useAuth();
@@ -17,8 +17,12 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto flex h-14 items-center justify-between px-4">
-        <Link to="/" className="flex items-center gap-2 font-bold text-lg tracking-tight">
-          <BookOpen className="h-5 w-5" />
+        <Link to="/" className="flex items-center gap-2.5 font-bold text-lg tracking-tight group">
+          <img
+            src="/fossee-logo.png"
+            alt="FOSSEE Logo"
+            className="h-[72px] w-[72px] sm:h-20 sm:w-20 object-contain drop-shadow-sm transition-transform duration-200 group-hover:scale-105"
+          />
           <span className="hidden sm:inline">FOSSEE Workshops</span>
           <span className="sm:hidden">FOSSEE</span>
         </Link>
