@@ -44,9 +44,9 @@ npm run dev
 ## Demo Video
 
 <!-- Replace the link below with your actual demo video link -->
-[![Demo Video](https://img.youtube.com/vi/q6lpRtTntFY/0.jpg)](https://youtu.be/q6lpRtTntFY)
+[![Demo Video](https://img.youtube.com/vi/L_tRy7G3YP4/0.jpg)](https://youtu.be/L_tRy7G3YP4)
 
-<a href="https://youtu.be/q6lpRtTntFY" target="_blank">
+<a href="https://youtu.be/L_tRy7G3YP4" target="_blank">
   <button>▶ Watch Demo Video</button>
 </a>
 
