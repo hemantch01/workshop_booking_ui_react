@@ -26,6 +26,8 @@
 git clone https://github.com/<your-username>/workshop_booking_ui_react
 cd workshop_booking_ui_react
 
+
+
 # 2. Backend
 cd backend
 python3 -m venv venv && source venv/bin/activate
@@ -33,6 +35,14 @@ pip install -r requirements.txt
 python3 manage.py migrate
 python3 manage.py createsuperuser
 python3 manage.py runserver 0.0.0.0:8000
+# ↑ prompts you:
+#   Username: admin
+#   Email: admin@example.com
+#   Password: yourpassword
+#   Password (again): yourpassword
+
+
+
 
 # 3. Frontend (new terminal)
 cd frontend
